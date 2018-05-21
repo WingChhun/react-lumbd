@@ -25,7 +25,6 @@ export default class Movie extends Component
         return (
             <div>
                 <h3>{title}</h3>
->
             </div>
         )
     }

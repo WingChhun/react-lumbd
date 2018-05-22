@@ -1,9 +1,6 @@
 /* eslint react/no-did-mount-set-state: 0 */
 import React, {Component} from 'react';
-//browserrouter
-//import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-// import logo from './logo.svg'; //import react-lumbd logo import
-// './MoviesList.css'; Import Components
+import {Link} from 'react-router-dom';
 import Movie from './Movie';
 
 class MoviesList extends Component {
@@ -29,7 +26,6 @@ class MoviesList extends Component {
     render() {
         return (
             <div>
-            <h1>Test</h1>
                 {this
                     .state
                     .movies

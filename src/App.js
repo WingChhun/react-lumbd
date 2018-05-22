@@ -8,6 +8,7 @@ import './App.css';
 //Import Components
 import Movie from './components/Movie/Movie';
 import MovieList from "./components/Movie/MoviesList";
+import MovieDetail from "./components/Movie/MovieDetail";
 
 const App = () => (
     <Router>
@@ -19,14 +20,10 @@ const App = () => (
             </header>
             <Switch>
                 <Route exact path="/" component={MovieList}/>
-                <Route path="/:id" component={Test}></Route>
+                <Route path="/:id" component={MovieDetail}></Route>
             </Switch>
         </div>
     </Router>
 );
 
-//can access router :<contents> it is stored within Match
-const Test = ({match}) => (
-    <h1>{match.params.id}</h1>
-)
 export default App;

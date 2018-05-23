@@ -2,6 +2,7 @@
     "name": "react-lumbd",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://WingChhun.github.io/react-lumbd",
     "dependencies": {
         "prop-types": "^15.6.1",
         "react": "^16.3.1",
@@ -15,11 +16,14 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "deploy":"gh-pages -d build",
+        "predeploy":"npm run build"
     },
     "devDependencies": {
         "eslint": "^4.19.1",
         "eslint-config-airbnb": "^16.1.0",
-        "eslint-plugin-react": "^7.8.2"
+        "eslint-plugin-react": "^7.8.2",
+        "gh-pages": "^1.1.0"
     }
 }

@@ -10,7 +10,7 @@ import MovieList from "./components/Movie/MoviesList";
 class App extends Component {
     render() {
         return (
-            <HashRouter>
+            <HashRouter basename={process.env.PUBLIC_URL}>
                 <div className="App">
                     <header className="App-header">
                         <img src={logo} className="App-logo" alt="logo"/>

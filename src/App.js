@@ -10,17 +10,14 @@ import MovieList from "./components/Movie/MoviesList";
 class App extends Component {
     render() {
         return (
+
             <HashRouter basename={process.env.PUBLIC_URL}>
                 <div className="App">
                     <header className="App-header">
                         <img src={logo} className="App-logo" alt="logo"/>
-                       
+
                     </header>
-                    <p className="App-intro">
-                        To get started, edit
-                        <code>src/App.js</code>
-                        and save to reload.
-                    </p>
+
                     <Switch>
                         <Route exact path="/" component={MovieList}/>
                         <Route exact path="/:id" component={MovieDetail}/>

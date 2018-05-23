@@ -2,7 +2,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import Movie from './Movie';
-
+import styled from "styled-components"; //styled components
 class MoviesList extends Component {
     //Initialize state
     state = {
@@ -25,16 +25,24 @@ class MoviesList extends Component {
 
     render() {
         return (
-            <div>
+            <MovieGrid>
                 {this
                     .state
                     .movies
                     .map(movie => <Movie key={movie.id} movie={movie}/>)
 }
-            </div>
+            </MovieGrid>
         )
     }
 }
 
 //export default APP component
 export default MoviesList;
+
+//Styled Components, CSS -GRID inside backticks is css
+const MovieGrid = styled.div `
+display:grid;
+padding:1rem;
+grid-template-columns:repeat(6,1fr);
+grid-row-gap:1rem;
+`;
